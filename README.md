@@ -36,6 +36,15 @@ problem.
 conda install -c http://conda.anaconda.org/menpo opencv3
 ```
 
+There's also the [`imutils` package of convenience functions](http://www.pyimagesearch.com/2015/02/02/just-open-sourced-personal-imutils-package-series-opencv-convenience-functions/)
+which is not available via Anaconda Cloud - install it via `pip` instead
+(just make sure the environment is activated first):
+
+``` bash
+pip install imutils
+```
+
+
 ### Windows installation
 
 Open the Anaconda prompt and create an environment:

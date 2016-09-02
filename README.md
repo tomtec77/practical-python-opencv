@@ -36,3 +36,24 @@ problem.
 conda install -c http://conda.anaconda.org/menpo opencv3
 ```
 
+### Windows installation
+
+Open the Anaconda prompt and create an environment:
+
+``` bash
+conda create --name opencv numpy scipy matplotlib jupyter
+```
+
+To install Mahotas we need to select another source from Anaconda Cloud:
+
+``` bash
+activate opencv
+conda install --name opencv -c http://conda.anaconda.org/conda-forge mahotas
+```
+
+Finally, install OpenCV 3:
+
+``` bash
+conda install --name opencv -c http://conda.anaconda.org/menpo opencv3
+```
+

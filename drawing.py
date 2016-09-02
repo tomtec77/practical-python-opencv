@@ -37,7 +37,7 @@ cv2.waitKey(0)
 
 # Reset the canvas to draw circles, and find its centre
 canvas = np.zeros((300, 300, 3), dtype="uint8")
-(centerX, centerY) = (canvas.shape[1]/2, canvas.shape[0]/2)
+(centerX, centerY) = (canvas.shape[1]//2, canvas.shape[0]//2)
 
 # Draw a series of white unfilled concentric circles
 white = (255, 255, 255)

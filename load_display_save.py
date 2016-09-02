@@ -1,3 +1,4 @@
+from __future__ import print_function
 import argparse
 import cv2
 
@@ -10,10 +11,12 @@ args = vars(ap.parse_args())
 
 # Load the image from disk
 # cv2.imread returns a NumPy array representing the image
+# Image height: number of rows
+# Image width: number of columns
 image = cv2.imread(args["image"])
-print "Width: %d pixels" % (image.shape[1])
-print "Height: %d pixels" % (image.shape[0])
-print "Channels: %d" % (image.shape[2])
+print("Width: {} pixels".format(image.shape[1]))
+print("Height: {} pixels".format(image.shape[0]))
+print("Channels: {}".format(image.shape[2]))
 
 # Display the actual image on screen, then pause the execution until any
 # key is pressed
